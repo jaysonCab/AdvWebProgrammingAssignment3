@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const session = require('express-session');
 const mustacheExpress = require('mustache-express');
+const logFiles = require('fs'); // For middleware in reading and writing to files for logs
 
 // Include the mustache engine to help us render our pages
 app.engine("mustache", mustacheExpress());
@@ -11,6 +12,22 @@ app.set('views', __dirname + '/views');
 // We use the .urlencoded middleware to process form data in the request body,
 // which is something that occurs when we have a POST request.
 app.use(express.urlencoded({extended: false}));
+
+// App.use means function will run on every request, thats why it's a middleware
+// Placed at the beginning of the script as everything should be logged
+app.use(function(req, res, next) {
+
+        const logLine =
+                new Date() + ", " +
+                req.path + ", " +
+                req.ip + ", " +
+                JSON.stringify(req.query) + ", " +
+                JSON.stringify(req.body) + "\n";
+
+        logFiles.appendFile("log.txt", logLine, () => {});
+
+        next();
+});
 
 // Use the session middleware
 app.use(session({secret: 'keyboard cat'
