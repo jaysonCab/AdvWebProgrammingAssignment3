@@ -33,3 +33,25 @@ Sat Mar 07 2026 13:25:11 GMT-0500 (Eastern Standard Time), /login/attemptlogin, 
 Sat Mar 07 2026 13:25:11 GMT-0500 (Eastern Standard Time), /members, ::1, {}, {}
 Sat Mar 07 2026 13:25:22 GMT-0500 (Eastern Standard Time), /members/create, ::1, {}, {"title":"Actually replace hardcoded bob","content":"No bob in title or create "}
 Sat Mar 07 2026 13:25:23 GMT-0500 (Eastern Standard Time), /articles, ::1, {}, {}
+Sat Mar 07 2026 13:51:11 GMT-0500 (Eastern Standard Time), /, ::1, {}, {}
+Sat Mar 07 2026 13:51:12 GMT-0500 (Eastern Standard Time), /home, ::1, {}, {}
+Sat Mar 07 2026 13:51:13 GMT-0500 (Eastern Standard Time), /login, ::1, {}, {}
+Sat Mar 07 2026 13:51:15 GMT-0500 (Eastern Standard Time), /login/signup, ::1, {}, {}
+Sat Mar 07 2026 13:54:20 GMT-0500 (Eastern Standard Time), /, ::1, {}, {}
+Sat Mar 07 2026 13:54:20 GMT-0500 (Eastern Standard Time), /home, ::1, {}, {}
+Sat Mar 07 2026 13:54:25 GMT-0500 (Eastern Standard Time), /home, ::1, {}, {}
+Sat Mar 07 2026 13:54:26 GMT-0500 (Eastern Standard Time), /login, ::1, {}, {}
+Sat Mar 07 2026 13:54:28 GMT-0500 (Eastern Standard Time), /login/signup, ::1, {}, {}
+Sat Mar 07 2026 13:54:40 GMT-0500 (Eastern Standard Time), /login/attemptsignup, ::1, {}, {"username":"JaysonCabreraAccount","password":"JaysonCabreraAccount"}
+Sat Mar 07 2026 13:54:40 GMT-0500 (Eastern Standard Time), /login/signup, ::1, {}, {}
+Sat Mar 07 2026 13:54:44 GMT-0500 (Eastern Standard Time), /login, ::1, {}, {}
+Sat Mar 07 2026 13:54:51 GMT-0500 (Eastern Standard Time), /login/attemptlogin, ::1, {}, {"username":"JaysonCabreraAccount","password":"JaysonCabreraAccount"}
+Sat Mar 07 2026 13:54:51 GMT-0500 (Eastern Standard Time), /members, ::1, {}, {}
+Sat Mar 07 2026 13:54:52 GMT-0500 (Eastern Standard Time), /home, ::1, {}, {}
+Sat Mar 07 2026 13:54:53 GMT-0500 (Eastern Standard Time), /login/logout, ::1, {}, {}
+Sat Mar 07 2026 13:54:53 GMT-0500 (Eastern Standard Time), /home, ::1, {}, {}
+Sat Mar 07 2026 13:54:54 GMT-0500 (Eastern Standard Time), /login, ::1, {}, {}
+Sat Mar 07 2026 13:54:58 GMT-0500 (Eastern Standard Time), /login/attemptlogin, ::1, {}, {"username":"JaysonCabreraAccount","password":"JaysonCabreraAccount"}
+Sat Mar 07 2026 13:54:58 GMT-0500 (Eastern Standard Time), /members, ::1, {}, {}
+Sat Mar 07 2026 13:55:00 GMT-0500 (Eastern Standard Time), /login/logout, ::1, {}, {}
+Sat Mar 07 2026 13:55:00 GMT-0500 (Eastern Standard Time), /home, ::1, {}, {}

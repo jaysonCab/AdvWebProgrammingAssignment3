@@ -25,4 +25,13 @@ async function authenticate(username, password)
   return result;
 }
 
-module.exports = {authenticate};
+// Create a new user
+async function createUser(username, password, access_level)
+{
+  await db.run(
+    "INSERT INTO Users VALUES (?,?,?)",
+    [username, password, access_level]
+  );
+}
+
+module.exports = {authenticate, createUser};
