@@ -1,6 +1,7 @@
 const express = require('express');
 var router = express.Router()
 const ArticlesModel = require('../models/articles.js')
+const UserModel = require('../models/users.js');
 
 // Displays the login page
 router.get("/", async function(req, res)
@@ -18,19 +19,27 @@ router.get("/", async function(req, res)
 router.post("/attemptlogin", async function(req, res)
 {
 
-  // is the username and password OK?
-  if (req.body.username == "bob" &&
-      req.body.password == "test")
-  {
-    // set a session key username to login the user
-    req.session.username = req.body.username;
+  const user = await UserModel.authenticate(req.body.username, req.body.password);
 
-    // re-direct the logged-in user to the members page
-    res.redirect("/members");
+  if (user)
+  {
+    // store the logged-in user in the session
+    req.session.username = user.username;
+    req.session.access_level = user.access_level;
+
+    // redirect based on access level
+    if (user.access_level === "editor")
+    {
+      res.redirect("/editors");
+    }
+    else
+    {
+      res.redirect("/members");
+    }
   }
   else
   {
-    // if we have an error, reload the login page with an error
+    // invalid login
     req.session.login_error = "Invalid username and/or password!";
     res.redirect("/login");
   }

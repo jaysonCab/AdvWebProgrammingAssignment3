@@ -8,3 +8,28 @@ Sat Mar 07 2026 10:12:35 GMT-0500 (Eastern Standard Time), /members/create, ::1,
 Sat Mar 07 2026 10:12:37 GMT-0500 (Eastern Standard Time), /articles, ::1, {}, {}
 Sat Mar 07 2026 10:12:42 GMT-0500 (Eastern Standard Time), /login/logout, ::1, {}, {}
 Sat Mar 07 2026 10:12:42 GMT-0500 (Eastern Standard Time), /home, ::1, {}, {}
+Sat Mar 07 2026 13:21:56 GMT-0500 (Eastern Standard Time), /, ::1, {}, {}
+Sat Mar 07 2026 13:21:56 GMT-0500 (Eastern Standard Time), /home, ::1, {}, {}
+Sat Mar 07 2026 13:21:58 GMT-0500 (Eastern Standard Time), /login, ::1, {}, {}
+Sat Mar 07 2026 13:22:02 GMT-0500 (Eastern Standard Time), /login/attemptlogin, ::1, {}, {"username":"mem1","password":"mem1"}
+Sat Mar 07 2026 13:22:02 GMT-0500 (Eastern Standard Time), /members, ::1, {}, {}
+Sat Mar 07 2026 13:22:06 GMT-0500 (Eastern Standard Time), /login/logout, ::1, {}, {}
+Sat Mar 07 2026 13:22:06 GMT-0500 (Eastern Standard Time), /home, ::1, {}, {}
+Sat Mar 07 2026 13:22:08 GMT-0500 (Eastern Standard Time), /login, ::1, {}, {}
+Sat Mar 07 2026 13:22:11 GMT-0500 (Eastern Standard Time), /login/attemptlogin, ::1, {}, {"username":"nice","password":"nice"}
+Sat Mar 07 2026 13:22:11 GMT-0500 (Eastern Standard Time), /login, ::1, {}, {}
+Sat Mar 07 2026 13:22:58 GMT-0500 (Eastern Standard Time), /login/attemptlogin, ::1, {}, {"username":"mem1","password":"mem1"}
+Sat Mar 07 2026 13:22:58 GMT-0500 (Eastern Standard Time), /members, ::1, {}, {}
+Sat Mar 07 2026 13:22:59 GMT-0500 (Eastern Standard Time), /articles, ::1, {}, {}
+Sat Mar 07 2026 13:23:02 GMT-0500 (Eastern Standard Time), /members, ::1, {}, {}
+Sat Mar 07 2026 13:23:11 GMT-0500 (Eastern Standard Time), /members/create, ::1, {}, {"title":"Bob hardcoded, should be mem1","content":"nice testing "}
+Sat Mar 07 2026 13:23:12 GMT-0500 (Eastern Standard Time), /articles, ::1, {}, {}
+Sat Mar 07 2026 13:24:59 GMT-0500 (Eastern Standard Time), /login/logout, ::1, {}, {}
+Sat Mar 07 2026 13:24:59 GMT-0500 (Eastern Standard Time), /home, ::1, {}, {}
+Sat Mar 07 2026 13:25:03 GMT-0500 (Eastern Standard Time), /, ::1, {}, {}
+Sat Mar 07 2026 13:25:03 GMT-0500 (Eastern Standard Time), /home, ::1, {}, {}
+Sat Mar 07 2026 13:25:04 GMT-0500 (Eastern Standard Time), /login, ::1, {}, {}
+Sat Mar 07 2026 13:25:11 GMT-0500 (Eastern Standard Time), /login/attemptlogin, ::1, {}, {"username":"mem1","password":"mem1"}
+Sat Mar 07 2026 13:25:11 GMT-0500 (Eastern Standard Time), /members, ::1, {}, {}
+Sat Mar 07 2026 13:25:22 GMT-0500 (Eastern Standard Time), /members/create, ::1, {}, {"title":"Actually replace hardcoded bob","content":"No bob in title or create "}
+Sat Mar 07 2026 13:25:23 GMT-0500 (Eastern Standard Time), /articles, ::1, {}, {}
