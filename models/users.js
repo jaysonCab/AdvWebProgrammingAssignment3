@@ -49,4 +49,9 @@ async function createUser(username, password, access_level)
   );
 }
 
-module.exports = {authenticate, createUser};
+async function getAllUsers()
+{
+  return await db.all("select username, password, level FROM Users");
+}
+
+module.exports = {authenticate, createUser, getAllUsers};
