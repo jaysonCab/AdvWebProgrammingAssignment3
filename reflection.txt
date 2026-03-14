@@ -1,0 +1,12 @@
+I really liked the thought process of encorperating the bcrypt library and comparing hashes for passwords. In the commit
+348d283eaf7d54a02c73ce2b344534ec16ea650e I changed from the database storing the raw text password into a hashed version
+and store that value instead. Then when authenticating, instead of comparing the raw input you would re-hash and compare
+through an authenticator function if they match.
+
+dbebb4c76c54bf0420e00d085b1e7436bc80b7e7 During this hash, I encountered a problem where I was attempting to implement
+the access level checker, so if the user was an editor or simply a member. I couldn't understand why although I was using
+the editor account and when I query on the Users table the account is labeled editor, it wouldn't allow me to enter the
+Editor tab. This was solved in the next commit where I simply console.log printed in the terminal what exactly was being
+saved into the variables when authenticating login. Turns out, the access level value was undefined as I was simply
+propogating the incorrect column name into the variable when assigning it. The column was called level in the database
+which I found by running PRAGMA table_info.
