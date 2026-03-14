@@ -25,7 +25,7 @@ router.post("/attemptlogin", async function(req, res)
   {
     // store the logged-in user in the session
     req.session.username = user.username;
-    req.session.access_level = user.access_level;
+    req.session.access_level = user.level;
 
     // redirect based on access level
     if (user.access_level === "editor")
